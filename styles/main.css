@@ -1,0 +1,362 @@
+a, div, span, img, a img, button, input, select, textarea, option, h1, h2, h3, h4{
+	margin:0;
+	padding:0;
+	outline:0;
+	border:0;
+}
+
+h2{
+margin-bottom:5px;
+color:#2782D1;
+}
+
+body{
+  font-size:13px;
+  font-family: Arial;
+  color:#666;
+  background: url("../img/bg.jpg") repeat;
+}
+
+a{
+	text-decoration: none;
+	color:#2F76C6;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+input, select, textarea{
+ background:#FFF;
+ outline:0px;
+ padding:5px;
+ color:#666;
+ width:300px;
+ border:1px solid #ccc;
+}
+button{
+ background: rgb(122,188,255); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdhYmNmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzYwYWJmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MDk2ZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(122,188,255,1)), color-stop(44%,rgba(96,171,248,1)), color-stop(100%,rgba(64,150,238,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-8 */
+border:0px;
+padding:2px 20px;
+color:#FFF;
+font-size:15px;
+text-shadow:1px 1px 0px #333;
+cursor: pointer;
+
+box-shadow:0 0px 1px #FFF inset, 0 0px 3px #000;
+}
+
+
+button:hover{
+background: rgb(137,196,255); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg5YzRmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzcxYjVmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1NGEyZjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(137,196,255,1) 0%, rgba(113,181,249,1) 44%, rgba(84,162,240,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(137,196,255,1)), color-stop(44%,rgba(113,181,249,1)), color-stop(100%,rgba(84,162,240,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(137,196,255,1) 0%,rgba(113,181,249,1) 44%,rgba(84,162,240,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(137,196,255,1) 0%,rgba(113,181,249,1) 44%,rgba(84,162,240,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(137,196,255,1) 0%,rgba(113,181,249,1) 44%,rgba(84,162,240,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(137,196,255,1) 0%,rgba(113,181,249,1) 44%,rgba(84,162,240,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c4ff', endColorstr='#54a2f0',GradientType=0 ); /* IE6-8 */
+
+}
+
+
+.clear{ 
+  width:0;
+  height:0;
+  border:0;
+  outline:0;
+  font-weight: normal;
+  clear:both;
+}
+/* Уарпара*/
+#wapper{
+    border:0px solid #000;
+	margin:0px auto;
+	width:900px;
+
+}
+/* ХЕАДЪРА */
+#header{
+	   border:0px solid #000;
+	   width: 890px;
+	   height:100px;
+}
+/* ЛОГО */
+#header #logo{
+
+	background: url('../img/logo.png') no-repeat;
+	width:400px;
+	height:100px;
+	float:left;
+	border:0px solid #ccc;
+}
+
+/* BANERA */
+#header #banner{
+
+	background: #fafafa;
+	width:480px;
+	height:80px;
+	float:right;
+	margin-top:10px;
+	border:1px solid #ccc;
+}
+/* МЕНЮ */
+#menu{
+ background: url("../img/design/menubg.png") no-repeat;
+ width:900px;
+ height:50px;
+ border:0px solid #000;
+ display:block;
+}
+
+#menu #links{
+   float:left;
+   display:block;
+   margin-left:20px;
+   margin-top:17px;
+   border:0px solid #000;
+   width:520px;
+}
+
+#menu #links a{
+ 	 color:#2186D3;
+ 	 margin-left:5px;
+}
+
+#menu #login-menu{
+	float:right;
+	overflow:hidden;
+	width:290px;
+	margin-right:20px;
+	margin-top:16px;
+	text-align: right;
+}
+
+	#menu #login-menu a{
+		 color:#333;
+	}
+
+
+/* БОДИТО */
+#body-wrapper{
+ background: #F0F0F0;
+ margin:10px;
+ padding:10px;
+}
+
+#body-wrapper #left-col{
+	 float:left;
+	 border:0px solid #000;
+	 width:580px;
+	 padding-right:10px;
+	 background: url('../img/vr.png') right  no-repeat
+}
+
+#body-wrapper #right-col{
+	 float:right;
+	 border:0px solid #000;
+	 width:265px;
+
+
+}
+/*  ТОП 2  */
+#body-wrapper #top-tutorials .text-title{
+  border:0px solid #000;
+  background: url('../img/design/text/top2.png') no-repeat;
+  width:190px;
+  height:46px;
+  margin-bottom:10px;
+}
+
+
+
+
+
+/*  POPULQRNIII  */
+#body-wrapper #popular-tutorials .text-title{
+  border:0px solid #000;
+  background: url('../img/design/text/popular.png') no-repeat;
+  width:333px;
+  height:49px;
+ 
+  margin-bottom:10px;
+  margin-top:35px;
+}
+
+#body-wrapper #popular-tutorials .tutorial{
+	width:180px;
+	height:100px;
+}
+ #body-wrapper #popular-tutorials  .tutorial .overbar{
+ 	width:180px;
+ 	height:50px;
+ 	margin-top:50px;
+ }
+
+  #body-wrapper #popular-tutorials  .tutorial .overbar .title,
+  #body-wrapper #popular-tutorials  .tutorial .overbar .stats {
+  	width:170px;
+	overflow:hidden;
+	box-shadow: inset  0px 3px #000;
+  }
+
+
+/* TOP pOTREBITELI */
+#body-wrapper #top-users .text-title{
+  border:0px solid #000;
+  background: url('../img/design/text/topusers.png') no-repeat;
+  width:542px;
+  height:47px;
+  margin-bottom:10px;
+  margin-top:35px;
+}
+
+	#body-wrapper #top-users .tutorial{
+	width:120px;
+	height:160px;
+	margin-left:20px;
+}
+ #body-wrapper #top-users  .tutorial .overbar{
+ 	width:120px;
+ 	height:50px;
+ 	margin-top:110px;
+ }
+
+  #body-wrapper #top-users  .tutorial .overbar .title,
+  #body-wrapper #top-users  .tutorial .overbar .stats {
+  	width:110px;
+  }
+
+/* ПОСЛЕДНИТЕ УРОЦИ - В ДЯСНО */
+
+#body-wrapper #last-tutorials .text-title{
+
+  border:0px solid #000;
+  background: url('../img/design/text/last2.png') no-repeat;
+  width:293px;
+  height:46px;
+  margin-bottom:10px;
+  margin-top:0px;
+}
+
+#body-wrapper #last-tutorials .tutorial{
+	margin-left:5px;
+	width:250px;
+}
+
+#body-wrapper #last-tutorials  .tutorial .overbar{
+ 	width:250px;
+ 	height:50px;
+ 	margin-top:130px;
+ }
+
+  #body-wrapper #last-tutorials  .tutorial .overbar .title,
+  #body-wrapper #last-tutorials  .tutorial .overbar .stats {
+  	width:240px;
+  }
+
+  /* OK msg */
+  .ok-msg{
+	background:#F8FFF4;
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#315420;
+	border:#315420;
+  }
+    /* ERROR msg */
+  .error-msg{
+	background:#FFF4F4;
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#51201F;
+	border:1px solid #894544;
+  }
+  
+  
+
+/* Фуутъра */
+#footer{
+ background: #F0F0F0;
+ margin:10px;
+ padding:7px 15px;
+}
+
+
+/*  ЕДИН ТУТОРИАЛ */
+  .tutorial {
+  	width:270px;
+  	height:180px;
+  	margin-left:10px;
+  	margin-bottom:10px;
+  	float:left;
+  	border:1px solid #CCC;
+  	background:#eaeaea url("../img/Murocheta-New762.png") no-repeat;
+
+  	box-shadow: 0 0px 3px #000;
+  }
+  
+  .tutorial:hover .overbar{ display: block; }
+
+  .tutorial .overbar{
+  	float:left;
+  	width:270px;
+  	height: 50px;
+  	background: #000; 
+  	margin-top:130px;
+  	border:0px solid #fff;
+  	color:#fff;
+  	opacity: 0.6;
+  	display: none;
+  }
+
+  .tutorial .overbar .title{
+  	 float:left;
+  	 margin-left:5px;
+  	 margin-top:5px;
+  	 font-size:14px;
+  	 width:260px;
+  	 height:25px;
+  	 border:0px solid #fff;
+  	 text-shadow:1px 1px 1px #000;
+  }
+   
+  .tutorial .overbar .title a{
+     color:#FFF;
+  }
+  
+  .tutorial .overbar .stats{
+  	display:block;
+  	float:left;
+   	 width:260px;
+   	 margin-left:5px;
+   	 margin-top:3px;
+   	 border:0px solid #fff;
+   	 overflow: hidden;
+   	 font-size:10px;
+  }
+
+  .tutorial .overbar .stats span:first-child{
+  	 float:left;
+  	 color:#ccc;
+  }
+
+
+  .tutorial .overbar .stats span:last-child{
+  	 float:right;
+  	 color:#ccc;
+  }
+
